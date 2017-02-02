@@ -1,0 +1,189 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles 
+body,
+html,
+.body {
+  background: #f3f3f3 !important;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  margin: 15px;
+  padding: 0;
+}
+
+.container.header {
+  background: #f3f3f3;
+}
+
+.body-drip {
+  border-top: 8px solid #663399;
+}
+
+//### modules ####
+.top-panel {
+  & a {
+    font-size: 13px;
+  }
+}
+
+.top-menu {
+  & a {
+    font-size: 10px;
+    font-weight: bold;
+    color: white !important;
+  }
+}
+
+//hero
+.hero {
+  background-image: url("../assets/img/hero.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  min-height: 380px;
+}
+
+.hero-wrapper {
+  margin-top: 20px;
+  Margin-top: 20px;
+}
+
+.hero-content {
+  & p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    Margin-top: 15px;
+    margin-left: 15px;
+    Margin-left: 15px;
+  }
+  & .hero-img {
+    padding-top: 20px;
+  }
+  & .hero-content-btn {
+    margin-left: 10px;
+  }
+}
+
+.hero-content-btn a {
+  min-width: 280px;
+  text-align: center;
+}
+
+//card
+
+.card {
+  border: 1px solid white !important;
+  & p {
+    text-align: center;
+    font-size: 11px;
+  }
+  & .card-img{
+    margin-bottom: 10px;
+  }
+  & .card-price {
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  & .card-price-old {
+    color: $dark-gray;
+    text-decoration: line-through;
+    line-height: 0;
+    padding-bottom: 10px;
+  }
+  & .card-btn table td a {
+    font-size: 13px;
+    min-width: 100px;
+    text-align: center;
+    font-weight: normal;
+  }
+}
+
+//text-panel
+
+.text-panel {
+  background-color: #F0F0F0;
+
+  & td {
+    height: 50px;
+    vertical-align: middle;
+  }
+  & p {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
+}
+
+//logos panel
+
+.logos-panel .menu-item img {
+  margin-top: 20px;
+}
+
+#footer p {
+  color: #656565 !important;
+}
+
+//### is modificator###
+
+.is-green {
+  color: #7FA9B2;
+}
+
+.is-gray {
+  background-color: #848484;
+}
+
+.is-gray-bg {
+  background-color: #F0F0F0;
+}
+
+.is-red {
+  color: #F23F3F;
+}
+
+/* Small only */
+@media only screen and (max-width: #{$global-breakpoint}) {
+  .hero {
+    background-image: none;
+    background-color: $light-gray;
+  }
+
+  //card
+
+  .card {
+    & p {
+      font-size: 18px;
+    }
+    & .card-img{
+      margin-bottom: 20px;
+      width: 200px;
+    }
+    & .card-price {
+      font-size: 31px;
+    }
+    & .card-price-old {
+      color: $dark-gray;
+      text-decoration: line-through;
+      line-height: 0;
+      padding-bottom: 20px;
+    }
+    & .card-btn table td a {
+      font-size: 16px;
+      min-width: 100px;
+    }
+  }
+
+  //logos panel
+  .logos-panel .menu-item img {
+    width: 200px;
+  }
+}
